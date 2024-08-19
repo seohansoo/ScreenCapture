@@ -69,7 +69,7 @@ class CaptureManager:
 
     def exit_program(self):
         print("Exiting...")
-        self.capture_window.root.quit()  # Stop Tkinter main loop
         self.capture_window.root.destroy()  # Destroy Tkinter window
+        self.capture_window.root.quit()  # Stop Tkinter main loop
         self.keyboard_handler.stop()  # Stop keyboard listener
         sys.exit()  # Exit the program
