@@ -22,7 +22,3 @@ class CaptureWindow:
 
     def start_main_loop(self):
         self.root.mainloop()
-
-    def stop(self):
-        self.root.quit()
-        self.root.destroy()
